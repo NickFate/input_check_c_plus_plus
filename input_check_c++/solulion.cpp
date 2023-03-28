@@ -1,11 +1,11 @@
-
+п»ї
 #include <iostream>
 #include <string>
 
 using namespace std;
 
 /// <summary>
-/// Проверяет, является ли строка числом. 
+/// РџСЂРѕРІРµСЂСЏРµС‚, СЏРІР»СЏРµС‚СЃСЏ Р»Рё СЃС‚СЂРѕРєР° С‡РёСЃР»РѕРј. 
 /// </summary>
 bool is_digit(string str)
 {
@@ -13,16 +13,16 @@ bool is_digit(string str)
 }
 
 /// <summary>
-/// Проверяет, содержит ли строка только символы кириллицы и латиницы.
+/// РџСЂРѕРІРµСЂСЏРµС‚, СЃРѕРґРµСЂР¶РёС‚ Р»Рё СЃС‚СЂРѕРєР° С‚РѕР»СЊРєРѕ СЃРёРјРІРѕР»С‹ РєРёСЂРёР»Р»РёС†С‹ Рё Р»Р°С‚РёРЅРёС†С‹.
 /// </summary>
 bool is_string(string str)
 {
-    return !str.empty() && (str).find_first_not_of("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю") == string::npos;
+    return !str.empty() && (str).find_first_not_of("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMР™Р¦РЈРљР•РќР“РЁР©Р—РҐРЄР¤Р«Р’РђРџР РћР›Р”Р–Р­РЇР§РЎРњРРўР¬Р‘Р®Р№С†СѓРєРµРЅРіС€С‰Р·С…СЉС„С‹РІР°РїСЂРѕР»РґР¶СЌСЏС‡СЃРјРёС‚СЊР±СЋ") == string::npos;
 }
 
 
 /// <summary>
-/// запрашивает ввод строки до тех пор, пока строка не будет соответствовать проверке checking_func
+/// Р·Р°РїСЂР°С€РёРІР°РµС‚ РІРІРѕРґ СЃС‚СЂРѕРєРё РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° СЃС‚СЂРѕРєР° РЅРµ Р±СѓРґРµС‚ СЃРѕРѕС‚РІРµС‚СЃС‚РІРѕРІР°С‚СЊ РїСЂРѕРІРµСЂРєРµ checking_func
 /// </summary>
 string input_with_checking(bool checking_func(string))
 {
@@ -32,7 +32,7 @@ string input_with_checking(bool checking_func(string))
     {
         if (!checking_func(str))
         {
-            cout << "Неверный ввод, повторите ввод" << endl;
+            cout << "РќРµРІРµСЂРЅС‹Р№ РІРІРѕРґ, РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ" << endl;
             cin >> str;
         }
         else
